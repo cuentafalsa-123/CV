@@ -1,0 +1,18 @@
+.App {  
+  background-color: #efefef
+}
+
+.App .header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.navegacion {  
+  text-align: center;
+  font-size: 0.80em;
+}
+.navegacion li {
+  padding: 3%;
+  display: inline;
+}
+

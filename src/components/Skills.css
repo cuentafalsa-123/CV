@@ -1,0 +1,14 @@
+.skills {
+    max-width: 2000px;
+    padding: 10px
+}
+
+.i {
+    margin-left: 400px;
+    float: left;
+}
+
+.d {
+    margin-left: 1px;
+    float: right;
+}
