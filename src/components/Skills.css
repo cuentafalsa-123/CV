@@ -1,14 +1,19 @@
 .skills {
-    max-width: 2000px;
+    margin-left: 400px;
     padding: 10px
 }
 
+.skills div {
+    margin: 5px;
+    padding: 3px;
+    min-width: 235px;
+    max-width: 250px;
+}
+
 .i {
-    margin-left: 400px;
     float: left;
 }
 
 .d {
-    margin-left: 1px;
     float: right;
 }
