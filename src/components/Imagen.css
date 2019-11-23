@@ -1,6 +1,5 @@
+
 .fotito {
-    display: inline;
     border-radius: 15px;
-    margin: 20px 50px;
-    box-direction: row;
+    margin-left: 50px
 }

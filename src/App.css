@@ -1,7 +1,9 @@
 .App {  
   display: block;
   min-height: 800px;
-  background-color: #efefef;
+  background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-mini-gallery-3?wid=4056&hei=2400&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1539897080761);
+  color: rgb(105, 105, 105);
+  font-weight: bold;
 }
 
 .App .header {
@@ -9,15 +11,8 @@
   font-size: 2em;
 }
 
-.navegacion {  
-  text-align: center;
-  font-size: 0.80em;
-}
-.navegacion li {
-  padding: 3%;
-  display: inline;
-}
-
-* {
-  padding: 5px
+.yo {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  margin: 50px 30px;
 }
