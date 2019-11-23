@@ -1,21 +1,32 @@
 .skills {
-    margin-left: 400px;
+    margin: auto 25%;
     padding: 10px;
     display: grid;
-    grid-template-columns: 50% 50%
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 }
 
 .skills div {
-    margin: 5px;
+    margin: auto 25%;
     padding: 3px;
     min-width: 235px;
-    max-width: 250px;
+    max-width: 3000px;
 }
 
-.i {
-    float: left;
-}
 
-.d {
-    float: right;
+@media all and (max-width: 1400px) {
+    .skills {
+        margin: auto 25%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        justify-content: center;
+    }
+    .skills div {
+        margin: auto;
+        padding: 3px;
+        min-width: 235px;
+        max-width: 3000px;
+    }
 }

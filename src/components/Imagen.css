@@ -3,3 +3,10 @@
     border-radius: 15px;
     margin-left: 50px
 }
+
+@media all and (max-width: 1400px) {
+    .fotito {
+        border-radius: 15px;
+        margin: auto
+    } 
+}
