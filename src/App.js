@@ -6,7 +6,9 @@ import Experiencia from './components/Experiencia';
 import Navbar from './components/Navbar';
 import './App.css';
 
+
 function App() {
+  
   return (
     <div className='todo'>
     <div className="App">

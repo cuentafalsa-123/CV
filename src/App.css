@@ -29,6 +29,14 @@
   }
 }
 
+.skillsFrame {
+  display: grid;
+  box-shadow: 2px 2px 10px #666;
+  width: 100px
+}
+
 * {
   margin: 0px
 }
+
+
