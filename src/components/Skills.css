@@ -6,9 +6,9 @@
     gap: 1em;
 }
 
-.skills a {
+.skills div {
     margin: auto 25%;
-    padding: 5px;
+    padding: 3px;
     min-width: 235px;
     max-width: 3000px;
 }
@@ -23,7 +23,7 @@
         gap: 1em;
         justify-content: center;
     }
-    .skills a {
+    .skills div {
         margin: auto;
         padding: 3px;
         min-width: 235px;
