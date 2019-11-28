@@ -18,7 +18,6 @@ function App() {
       </header>
       <Navbar />
       
-{/* aca falta acomodar las skills con algun recurso de CSS, para que en vez de listarse o quedar como se les cante el culo, se acomoden prolijamente en una caja segun la cantidad que sean */}
       <section className='yo' >
         <Imagen />
         <Presentacion />
