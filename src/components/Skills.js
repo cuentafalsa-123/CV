@@ -2,8 +2,8 @@ import React from 'react';
 import Cuadrito from './Cuadrito';
 import Skill from './Skill.js';
 import './Skills.css';
+import './Skill.css';
 
-<<<<<<< HEAD
 class Skills extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +28,7 @@ class Skills extends React.Component {
             
         return (
             <div className='skills'>
-                <a className='d'><Cuadrito nombre='HTML'/></a>
+                <a className='d' onClick={this.btnAbrirPopup}><Cuadrito nombre='HTML'/></a>
                 <a className='d'><Cuadrito nombre='CSS'/></a>
                 <a className='d'><Cuadrito nombre='Javascript ES6'/></a>
                 <a className='d'><Cuadrito nombre='React JS'/></a>
@@ -39,19 +39,6 @@ class Skills extends React.Component {
             </div>
         )
     }
-=======
-const Skills = () => {
-    return (
-        <div className='skills'>
-            <div className='d'><Cuadrito nombre='HTML'/></div>
-            <div className='d'><Cuadrito nombre='CSS'/></div>
-            <div className='d'><Cuadrito nombre='Javascript ES6'/></div>
-            <div className='d'><Cuadrito nombre='React JS'/></div>
-            <div className='d'><Cuadrito nombre='Node JS'/></div>
-            <div className='d'><Cuadrito nombre='Mongo DB'/></div>
-        </div>
-    )
->>>>>>> parent of cee4add... Merge branch 'master' of https://github.com/pablopoggiog/CV
 }
 
 export default Skills;
