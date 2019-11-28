@@ -44,4 +44,4 @@ class Skill extends React.Component {
     }
 }
 
-export default Skill;
+export default Skills;
