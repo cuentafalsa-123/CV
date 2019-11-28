@@ -1,5 +1,5 @@
 .App {  
-  min-height: 800px;
+  min-height: 1500px;
   background-image: url(https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-mini-gallery-3?wid=4056&hei=2400&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1539897080761);
   color: rgb(105, 105, 105);
   font-weight: bold;
@@ -26,6 +26,10 @@
     margin: 50px 30px;
     align-items: center;
     justify-content: center;
+  }
+  .App{
+    min-height: 100%;
+    background-image: url(https://fotos.subefotos.com/e61f0beec785b6daf63bbecbf459ae62o.jpg);
   }
 }
 

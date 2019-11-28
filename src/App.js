@@ -29,9 +29,8 @@ function App() {
       <section>
         <Experiencia />
       </section>
-
-    </div>
     
+    </div>
     </div>
   );
 }

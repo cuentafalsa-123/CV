@@ -17,7 +17,7 @@
 @media all and (max-width: 1400px) {
     .skills {
         margin: auto 25%;
-        padding: 10px;
+        padding: 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;

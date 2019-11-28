@@ -31,17 +31,20 @@ class Cuadrito extends React.Component {
             
                 <div className="overlay" id="overlay">
                     <div className="popup" id="popup">
-                        <a href="#" id="btn-cerrar-popup" className="btn-cerrar-popup" onClick={this.btnCerrarPopup}><i className="fas fa-times"></i></a>
-                        <h3 id='tuvi'>{this.props.nombre}</h3>
-                        <h4>Visualiza cada proyecto en mi repositorio de Github!</h4>
-                        <form action="">
-                            <div className="contenedor-inputs">
-                                <button type="link" href='https://www.google.com'>Proyecto 1</button>
-                                <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
-                                <button type="submit" href='www.google.com'>Proyecto 2</button>
-                                <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
-                            </div>
-                        </form>
+                        <div className='conjunto'>
+                            <a href="#" id="btn-cerrar-popup" className="btn-cerrar-popup" onClick={this.btnCerrarPopup}><i className="fas fa-times"></i></a>
+                            <h3 id='tuvi'>{this.props.nombre}</h3>
+                            <h4>Visualiza cada proyecto en mi repositorio de Github!</h4>
+                            <form action="">
+                                <div className="contenedor-inputs">
+                                    <button type="link" href='https://www.google.com'>Proyecto 1</button>
+                                    <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
+                                    <br></br>
+                                    <button type="submit" href='www.google.com'>Proyecto 2</button>
+                                    <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>    

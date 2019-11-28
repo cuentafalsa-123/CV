@@ -1,5 +1,7 @@
 .texto {
     text-align: center;
     padding: 4px 10px;
-    color: rgb(206, 206, 206)
+    color: rgb(206, 206, 206);
+    max-width: 80%;
+    margin-left: 10%
 }

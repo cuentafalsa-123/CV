@@ -66,13 +66,11 @@
 
 .popup {
 	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 	border-radius: 3px;
 	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	text-align: center;
-    width: 50%;
-    height: 50%;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
@@ -80,6 +78,7 @@
 }
 
 .popup .btn-cerrar-popup {
+	width: 70%;
 	font-size: 16px;
 	line-height: 16px;
 	display: block;
@@ -108,16 +107,9 @@
 }
 
 .popup form .contenedor-inputs {
-	max-width: 90%;
-	max-height: 50%;
+	width: 90%;
+	height: 90%;
     opacity: 0;
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-    text-align: center;
-    padding: 30px;
-    margin: 10% 15%;
-	align-items: center;
 }
 .popup form .contenedor-inputs button {
 	margin: 20px;
@@ -127,6 +119,7 @@
 	text-align: center;
 	border: 1px solid #BBBBBB;
 	width: 120px;
+    outline: none
 }
 
 .popup form .btn-submit {
@@ -141,7 +134,8 @@
 	font-size: 16px;
 	cursor: pointer;
     transition: .3s ease all;
-    width: 320px
+    width: 320px;
+    outline: none
 }
 
 
@@ -171,7 +165,6 @@
 		justify-items: center;
 	}
 	.popup form .contenedor-inputs button {
-		margin-bottom: 20px;
 		height: 52px;
 		font-size: 18px;
 		line-height: 52px;
