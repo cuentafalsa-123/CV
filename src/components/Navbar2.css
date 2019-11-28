@@ -1,0 +1,83 @@
+
+
+
+
+
+
+*,*:before,
+*:after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0
+}
+
+.header {
+    
+}
+
+.navigation_icon{
+    width: 55px;
+    height: 44px;
+    display: relative;
+    top: 22%;
+    left: 35%;
+    background: hsla(312,51%,41%0.6);
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(.9,0,.33);
+}
+
+.navigation_icon .middlebar{
+    width: 55px;
+    height: 2px;
+    display: block;
+    background: #fc0363;
+    position: absolute;
+    top: 20px;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9,0,.33,1)
+}
+
+.navigation_icon .bottombar{
+    width: 35px;
+    height: 3px;
+    display: block;
+    background: #fc0363;
+    position: absolute;
+    top: 30px;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9,0,.33,1)
+}
+
+.navigation .navigation_ul{
+    float: right;
+    margin-top: 220px;
+    visibility: hidden;
+    transform: rotateY(-90deg) translateX(-300px);
+    transition: all 800ms cubic-bezier(.9,0,.33,1)
+}
+
+.navigation .navigation_ul li{
+    list-style: none;
+    text-align: right;
+}
+.navigation .navigation_ul a{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.navigation .navigation_ul a:hover{
+    color:hsl(185,96%,33/5);
+}
+
+
+
+
+
+
+
+

@@ -4,6 +4,7 @@ import Presentacion from './components/Presentacion';
 import Skills from './components/Skills';
 import Experiencia from './components/Experiencia';
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 import './App.css';
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         <Experiencia />
       </section>
 
-    </div></div>
+    </div>
+    
+    </div>
   );
 }
 
