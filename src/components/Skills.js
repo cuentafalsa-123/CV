@@ -3,55 +3,18 @@ import Cuadrito from './Cuadrito';
 import './Skills.css';
 import './Skill.css';
 
-class Skills extends React.Component {
-    constructor(props) {
-        super(props);
-        
-      
-    this.btnAbrirPopup = this.btnAbrirPopup.bind(this);
-    this.btnCerrarPopup = this.btnCerrarPopup.bind(this);
-    }
 
-    btnAbrirPopup(){
-        document.getElementById('overlay').classList.add('active');
-        document.getElementById('popup').classList.add('active');
-    };
+const skillsArr = ['HTML','CSS', 'Javascript ES6', 'React JS', 'Node JS', 'MongoDB'];
 
-    btnCerrarPopup(e){
-        e.preventDefault();
-        document.getElementById('overlay').classList.remove('active');
-        document.getElementById('popup').classList.remove('active');
-    };
-
-    render() {
-            
+const Skills = () => {
         return (
+            // itero sobre el array de skills para crear varios botones, uno por cada skill
             <div className='skills'>
-                <a className='d' onClick={this.btnAbrirPopup}><Cuadrito nombre='HTML'/></a>
-                <a className='d'><Cuadrito nombre='CSS'/></a>
-                <a className='d'><Cuadrito nombre='Javascript ES6'/></a>
-                <a className='d'><Cuadrito nombre='React JS'/></a>
-                <a className='d'><Cuadrito nombre='Node JS'/></a>
-                <a className='d'><Cuadrito nombre='Mongo DB'/></a>
-
-                <div className="overlay" id="overlay">
-                        <div className="popup" id="popup">
-                            <a href="#" id="btn-cerrar-popup" className="btn-cerrar-popup" onClick={this.btnCerrarPopup}><i className="fas fa-times"></i></a>
-                            <h3>HTML</h3>
-                            <h4>Visualiza cada proyecto en mi repositorio de Github!</h4>
-                            <form action="">
-                                <div className="contenedor-inputs">
-                                    <a href='https://www.google.com'>Proyecto 1</a>
-                                    <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
-                                    <a href='www.google.com'>Proyecto 2</a>
-                                    <input type="submit" className="btn-submit" value="Descargar codigo fuente de proyecto"/>
-                                </div>
-                            </form>
-                        </div>
-                </div>
+                {skillsArr.map(skill => {
+                    return <a><Cuadrito nombre={skill} quezezta={skill}/></a>
+                })}
             </div>
         )
     }
-}
 
 export default Skills;
