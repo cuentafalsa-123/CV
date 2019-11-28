@@ -28,7 +28,7 @@ class Skills extends React.Component {
             
         return (
             <div className='skills'>
-                <a className='d'><Cuadrito nombre='HTML'/></a>
+                <a className='d' onClick={this.btnAbrirPopup}><Cuadrito nombre='HTML'/></a>
                 <a className='d'><Cuadrito nombre='CSS'/></a>
                 <a className='d'><Cuadrito nombre='Javascript ES6'/></a>
                 <a className='d'><Cuadrito nombre='React JS'/></a>
