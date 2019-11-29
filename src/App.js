@@ -14,7 +14,7 @@ function App() {
     <div className='todo'>
     <div className="App">
       <header className='header'>
-        <p>Curriculum Vitae</p>
+        <p>Pablo Poggio</p>
       </header>
       <Navbar />
       
@@ -23,8 +23,8 @@ function App() {
         <Presentacion />
       </section>
       <section>
-        
-      <Skills />
+          
+      <Skills id='skills'/>
       </section>
       <section>
         <Experiencia />
