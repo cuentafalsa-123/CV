@@ -6,7 +6,7 @@ const texto = 'Lorem ipsum dolor sit amet consectetur adipiscing elit eget plate
 const Presentacion = () => {
     return (
         <div>
-            <p className='texto'>{texto}</p>
+            <p tabindex='0' className='texto' id='presentacion'>{texto}</p>
         </div>
     )
 }

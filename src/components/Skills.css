@@ -3,21 +3,20 @@
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
 }
 
 .skills a {
     margin: auto 25%;
     padding: 5px;
     min-width: 235px;
-    max-width: 3000px;
+    max-width: 250px;
 }
 
 
 @media all and (max-width: 1400px) {
     .skills {
         margin: auto 25%;
-        padding: 50px;
+        padding: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;

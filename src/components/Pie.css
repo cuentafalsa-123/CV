@@ -1,0 +1,24 @@
+.pie{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky
+}
+
+.copy{
+    color: lightgrey;
+    margin-left: 50px;
+    position: sticky
+}
+.contacto{    
+    color: lightgrey;
+    margin-right: 50px;
+    position: sticky
+}
+
+@media all and (max-width: 1400px) {
+    .pie{
+        margin-top: 30px;
+        padding: 30px auto
+    }
+}

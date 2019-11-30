@@ -4,21 +4,22 @@ import Presentacion from './components/Presentacion';
 import Skills from './components/Skills';
 import Experiencia from './components/Experiencia';
 import Navbar from './components/Navbar';
-import Navbar2 from './components/Navbar2';
+import Pie from './components/Pie';
+import Formacion from './components/Formacion';
 import './App.css';
+import Carousel from './components/Carousel.js';
 
 
 function App() {
   
   return (
-    <div className='todo'>
     <div className="App">
-      <header className='header'>
+      <header className='App__header'>
         <p>Pablo Poggio</p>
-      </header>
       <Navbar />
+      </header>
       
-      <section className='yo' >
+      <section className='App__yo' >
         <Imagen />
         <Presentacion />
       </section>
@@ -29,8 +30,8 @@ function App() {
       <section>
         <Experiencia />
       </section>
-    
-    </div>
+      <Carousel />
+      <Pie/>
     </div>
   );
 }

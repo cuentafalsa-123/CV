@@ -1,12 +1,19 @@
-.App {
+$gris: rgb(105, 105, 105);
+
+@mixin grid {
   display: grid;
+}
+
+
+.App {  
+  @include grid;
   max-height: 1700px;
   background-image: url(./fondo-modificado.jpg);
-  color: dimgray;
+  color: $gris;
   font-weight: bold;
   margin: 0px;
   grid-template-rows: 1fr 2fr 3fr 2fr 5fr 1fr;
-  align-items: center;
+  align-items: center
 }
 
 .App__header {
@@ -17,19 +24,18 @@
 }
 
 .App__yo {
-  display: grid;
+  @include grid;
   grid-template-columns: 1fr 4fr;
   margin: 0px 20px 30px 30px;
-  align-items: center;
+  align-items: center
 }
 
 @media all and (max-width: 1400px) {
-  .App {
+  .App{
     background-image: url(./fondo-small.jpg);
     min-height: 100%;
-    display: block;
+    display: block
   }
-
   .App__yo {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
@@ -37,5 +43,3 @@
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=App.css.map */
