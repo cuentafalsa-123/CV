@@ -1,0 +1,17 @@
+
+.fotito {
+    border-radius: 15px;
+    margin-left: 50px;
+    transition: 450ms all
+}
+.fotito:hover{
+    transform: scale(1.15)
+}
+
+
+@media all and (max-width: 1400px) {
+    .fotito {
+        border-radius: 15px;
+        margin: auto
+    } 
+}
