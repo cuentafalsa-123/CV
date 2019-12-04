@@ -1,7 +1,6 @@
 import React from 'react';
 import './Carousel.css';
 import CarouselItem from './CarouselItem';
-import { tsPropertySignature } from '@babel/types';
 
 const formacionAc = [{estado: 'Aprobado', tema: 'Learn HTML', sitio: 'Codecademy', foto: 'https://desarrolloweb.com/storage/tag_images/actual/NTyqDTKED8kFAhWxUzUwFGQJacxNoQBfFekELDya.png'},
     {estado: 'Aprobado', tema: 'Styling a Website: CSS', sitio: 'Codecademy', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuy0IgiPd7DLIFMaB6ehojjR6wCDZXlOgktaGi5HmLzcru64QoiQ&s'},
@@ -21,13 +20,15 @@ const formacionAc = [{estado: 'Aprobado', tema: 'Learn HTML', sitio: 'Codecademy
     {estado: 'Aprobado (9)', tema: 'Curso de Frontend Developer', sitio: 'Platzi', foto: 'https://i1.wp.com/devana.rs/blog/wp-content/uploads/2015/10/frontend.jpg?fit=1200%2C800'}
 ];
 
+const formacion = formacionAc.reverse();
 
 const Carousel = () => {
     return (
 
         <section className='carousel'>
+            <h1 className='titulo' >Formación</h1>
             <div className='carousel__container'>
-                {formacionAc.map(curso => <CarouselItem estado={curso.estado} tema={curso.tema} sitio={curso.sitio} foto={curso.foto} />)}
+                {formacion.map(curso => <CarouselItem estado={curso.estado} tema={curso.tema} sitio={curso.sitio} foto={curso.foto} />)}
             </div>
         </section>
     )

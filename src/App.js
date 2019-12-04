@@ -23,15 +23,11 @@ function App() {
         <Imagen />
         <Presentacion />
       </section>
-      <section>
           
-      <Skills id='skills'/>
-      </section>
-      <section>
-        <Experiencia />
-      </section>
-      <Carousel />
-      <Pie/>
+      <Skills className='skills'> </Skills>
+      <Experiencia className='experiencia'/>
+      <Carousel className='carousel'/>
+      <Pie className='pie'/>
     </div>
   );
 }

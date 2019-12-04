@@ -1,13 +1,57 @@
 .carousel{
-    padding: 50px 100px;
-    position:  relative;
+    margin-top: 100px;
     width: 90%;
-    justify-content: flex-end;
     text-align: center;
-    overflow: scroll;
+    justify-self: center;  
+    color: rgb(206, 206, 206);
 }
+
+.titulo {
+    padding-bottom: 50px
+}
+
 .carousel__container{
     white-space: nowrap;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    overflow-x: auto;
+    padding: 50px;
 }
+
+.carousel__container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+} 
+
+
+/* Tamaño del scroll */
+.carousel__container::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+  
+   /* Estilos barra (thumb) de scroll */
+  .carousel__container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .carousel__container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+  
+  .carousel__container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+   /* Estilos track de scroll */
+  .carousel__container::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+  }
+  
+  .carousel__container::-webkit-scrollbar-track:hover, 
+  .carousel__container::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
+  

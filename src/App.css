@@ -7,16 +7,23 @@
   display: grid;
   max-height: 1900px;
   background-image: url(./fondo-modificado.jpg);
-  color: dimgray;
+  color: rgba(206, 206, 206, 0.938);
+  height: 100%;
   font-weight: bold;
   -ms-grid-rows: 1fr 2fr 3fr 2fr 10fr 1fr;
-      grid-template-rows: 1fr 2fr 3fr 2fr 10fr 1fr;
+  -ms-grid-columns: (1fr)[6];
+      grid-template: 1fr 2fr 3fr 2fr 10fr 1fr/repeat(6, 1fr);
+      grid-template-areas: "App__header App__header App__header App__header App__header App__header" "yo yo yo yo yo yo" "skills skills skills skills skills skills" "experiencia experiencia experiencia experiencia experiencia experiencia" "carousel carousel carousel carousel carousel carousel" "pie pie pie pie pie pie";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .App__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: App__header;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -25,6 +32,10 @@
 }
 
 .App__yo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: yo;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,10 +48,39 @@
           align-items: center;
 }
 
+.skills {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: skills;
+}
+
+.experiencia {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: experiencia;
+}
+
+.carousel {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: carousel;
+}
+
+.pie {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pie;
+}
+
 @media all and (max-width: 1400px) {
   .App {
     background-image: url(./fondo-small.jpg);
     min-height: 100%;
+    max-width: 100%;
     display: block;
   }
   .App__yo {
