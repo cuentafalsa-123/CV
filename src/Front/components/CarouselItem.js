@@ -8,10 +8,10 @@ const CarouselItem = (props) => {
             <div className='carousel-item__details'>                           
                      <img src='./src/icons8-folder-32.png' alt=''></img>
                      <img src='' alt=''></img>
-                     <ul>
+                     <ul className='children'>
                         <li key='tema' className='carousel-item__details--item'>
                             <p className='label'>Tema:</p>
-                            <p className='holis'>{props.tema}</p>
+                            <p>{props.tema}</p>
                         </li>
                         <li key='estado' className='carousel-item__details--item'>
                             <p className='label'>Estado:</p>

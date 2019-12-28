@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Skill.css';
+import ReactDOM from 'react-dom';
 
 class Cuadrito extends React.Component {
     constructor(props) {
@@ -27,7 +28,9 @@ class Cuadrito extends React.Component {
         return (
             <div>
                 <div className='tarjeta' id={this.props.nombre} onClick={this.btnAbrirPopup}>{this.props.nombre}</div>
-            
+
+                {ReactDOM.createPortal(
+                    
                 <div className="overlay" id="overlay">
                     <div className="popup" id="popup">
                         <div className='conjunto'>
@@ -45,7 +48,8 @@ class Cuadrito extends React.Component {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div>, document.getElementById('root2')
+                )}
             </div>    
     )
 }}

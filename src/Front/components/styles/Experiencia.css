@@ -1,0 +1,12 @@
+.experiencia3 {  
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px grey;
+    padding: 20px;
+    border-radius: 2px;
+    color: rgb(189, 188, 188);    
+    color: rgb(206, 206, 206);
+}
+.experiencia h1{
+    font-size: 1.5rem;
+}
