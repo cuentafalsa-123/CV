@@ -4,8 +4,7 @@ const URI = process.env.MONGODB_URI || 'mongodb://localhost/databasetest';
 
 const express = require('express');
 const app = express();
-const db = require('./database');
-db();
+require('./database');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 5000;
