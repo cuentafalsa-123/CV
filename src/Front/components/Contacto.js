@@ -9,16 +9,22 @@ const Formulario = () => {
     const [empresa, setEmpresa] = useState('')
     const [mensaje, setMensaje] = useState('')
 
-    const handleMensaje = async (e) => {
+    const handleMensaje = async (e) => {            
         e.preventDefault();
+        if (mensaje !== '') {
         await axios.post('http://localhost:5000/api/mensajes', 
         {
             autor, 
             empresa, 
-            mensaje
+            mensaje,
+            date: new Date()
         });
         console.log('MENSAJE CREADO PAPU');
         btnAbrirPopup();
+        }
+        else {
+            alert('Mensaje vacio! No has escrito aun')
+        }
     }
 
     function btnAbrirPopup(){        

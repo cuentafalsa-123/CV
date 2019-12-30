@@ -152,7 +152,7 @@ button {
 		margin: 7% 2%;
 	}
 
-	.popup {
+	/* .popup {
 		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 		border-radius: 3px;
 		font-family: 'Montserrat', sans-serif;
@@ -181,7 +181,7 @@ button {
 		border: 1px solid #BBBBBB;
 		width: 120px;
 		margin: 10px 10px;
-	}
+	} */
   }
 
 .popup form .btn-submit:hover {

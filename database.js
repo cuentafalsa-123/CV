@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URI = 'mongodb://localhost/database4'
+const URI = 'mongodb+srv://pablopoggiog:merecago1512@pp-dkxhb.gcp.mongodb.net/test?retryWrites=true&w=majority'
 
 mongoose.connect(URI, 
     {useUnifiedTopology: true,

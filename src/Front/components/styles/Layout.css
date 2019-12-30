@@ -2,27 +2,6 @@
   outline: 0;
 }
 
-.App {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  max-height: 1900px;
-  background-image: url(./fondo-modificado.jpg);
-  background-size: cover;
-  color: rgba(206, 206, 206, 0.938);
-  height: 100%;
-  font-weight: bold;
-  -ms-grid-columns: repeat(6, 1fr);
-      grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "App__header App__header App__header App__header App__header App__header"
-                       "children children children children children children"
-                       "pie pie pie pie pie pie";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: start;
-}
-
 .App__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -36,22 +15,6 @@
   display: grid;
 }
 
-.App__yo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: yo;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
 
 /* 

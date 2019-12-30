@@ -7,6 +7,7 @@ const Sugerencias = ({query}) => {
     const handleSugerencia = async () => {
         await axios.post('http://localhost:5000/api/sugerencias', {
             "tema": query,
+            "date": new Date()
         })
         btnAbrirPopup();
     }

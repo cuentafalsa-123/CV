@@ -3,9 +3,8 @@ const {Schema, model} = require('mongoose');
 const sugerenciasSchema = new Schema({
     tema: {
         type: String,
-        timestamps: true
     },
-    autor: String,
+    date: Date,
 })
 
 const Sugerencias = new model('Sugerencias', sugerenciasSchema);

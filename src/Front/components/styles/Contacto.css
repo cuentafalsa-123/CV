@@ -4,9 +4,7 @@
 }
 
 .form-container {
-    justify-self: center;
     display: grid;
-    justify-content: center;
     align-items: center;
     grid-template: 1fr 1fr 4fr 1fr / 1fr 3fr;
     grid-area: 'nombreLabel nombreInput'
@@ -14,7 +12,8 @@
                'tvieja mensaje'
                'submit submit';
     grid-gap: 20px;
-    width: 700px
+    width: 50vw;
+    justify-content: center
 }
 
 .form-container input, textarea {    
@@ -23,7 +22,7 @@
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    margin: auto 20px
+    margin: auto 20px;
 }
 
 ::placeholder {
